@@ -1,0 +1,174 @@
+@import "libs"
+@import "base"
+@import "page"
+
+
+.header
+	position: absolute
+	right: 0
+	left: 0
+	background: grey
+	padding: 5px 0
+	transition: all .3s
+	z-index: 1
+
+	&__container
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		a
+			img
+				margin-left: 10px	
+		
+	&__logo
+		text-align: center
+		a
+			img
+				margin-left: 0
+
+.position
+	z-index: 1
+	p
+		font-size: 20px
+		color: #fff
+		font-weight: 700
+		line-height: 1.2
+		
+
+.main
+	width: 100vw
+	height: 100vh
+
+	&__photo
+		position: fixed
+		bottom: 0
+		right: 40%
+		width: 80%
+		height: auto
+
+		img
+			width: 100%
+			height: 100%
+
+	&__block
+		position: relative
+		left: 50%
+		padding-top: 150px
+		transform: translate(-50%, 0)
+		width: 500px
+		height: 700px
+		z-index: 1
+
+	&__ipad
+		position: absolute
+		left: 50%
+		top: 20%
+		max-width: 500px
+		max-height: 700px
+
+		&--bg
+			position: absolute
+			left: 56%
+			top: 29%
+			width: 440px
+			height: 570px
+			&::after 
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background-image: linear-gradient(45deg, rgba(209, 0, 42, 0.6) 0%, #0E5DC4 100%)
+			img
+				width: 100%
+				height: 100%
+
+	&__slider
+		position: relative
+		left: 67%
+		top: 15%
+		width: 330px
+
+		img
+			max-width: 330px
+			margin-bottom: 20px
+
+.swiper-slide
+	div
+		text-align: center
+
+.title
+	padding-bottom: 20px
+	margin-bottom: 20px
+	border-bottom: 2px solid #fff
+	font-size: 16px
+	font-weight: 700
+
+.text
+	margin-bottom: 20px
+	font-size: 15px
+	line-height: 1.6em
+
+.swiper-button-next
+	background-image: none
+	background-color: #fff
+	border-radius: 100%
+	width: 50px
+	height: 50px
+	right: 0
+	&::before
+		content: "\f061"
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		font-weight: 700
+		font-size: 20px
+		color: #000
+		font-family: $fontawesome
+
+.swiper-button-prev
+	background-image: none
+	background-color: #fff
+	border-radius: 100%
+	width: 50px
+	height: 50px
+	left: 0
+	&::before
+		content: "\f060"
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		font-weight: 700
+		font-size: 20px
+		color: #000
+		font-family: $fontawesome
+
+.click
+	display: inline-block
+	background: linear-gradient(to right, #fff810ad 0%, #edff26d1 80%, #f1e01a 100%)
+	padding: 18px 60px
+	border-radius: 60px
+	margin: 0 auto
+	text-transform: uppercase
+	color: #000
+	font-size: 17px
+	line-height: 1
+	margin-bottom: 40px
+	transition: all 0.3s ease-out
+	&:hover
+		color: #000
+		animation: hover .3s linear 1 forwards
+		box-shadow: 0 5px 5px rgba(100%, 97%, 6%, .3)
+
+
+.btn
+	z-index: 1
+	&:hover
+		animation: hover .3s linear 1 forwards
+	
+
+@import "media" // Always at the end
