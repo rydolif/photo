@@ -1,12 +1,58 @@
 //-----------------sass-------------------
-// animation: opacity-back .3s linear 1 forwards
+// animation: blick .3s linear 1 forwards
 
-// @keyframes
-//   0%
-  
-//   50%
-  
-//   100%
+
+
+
+
+//-----------------photo---------------
+@keyframes photo
+	0%
+		opacity: 0
+
+	20%
+		opacity: 1
+		width: 20px
+		height: 20px
+		background-color: rgba(255, 255, 255, .3)
+
+	80%
+		opacity: 1
+		width: 2000px
+		height: 2000px
+		background-color: rgba(255, 255, 255, .6)
+
+	100%
+		opacity: 0
+
+
+//----------------flash-img---------------
+@keyframes flash
+	0%
+		opacity: 0
+
+	20%
+		opacity: 1
+
+	80%
+		opacity: 1
+
+	100%
+		opacity: 0
+
+//----------------blick-img---------------
+@keyframes blick
+	0%
+		opacity: 0
+
+	40%
+		opacity: 1
+
+	60%
+		opacity: 1
+
+	100%
+		opacity: 0
 
 //----------------hover-img---------------
 @keyframes hover

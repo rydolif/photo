@@ -47,9 +47,47 @@
 		width: 80%
 		height: auto
 
+		&::before
+			content: ''
+			position: absolute
+			left: 67%
+			top: 54%
+			width: 8px
+			height: 8px
+			background-color: red
+			border-radius: 50%
+			opacity: 0
+			animation: blick .6s linear 1 forwards
+
+		&::after
+			content: ''
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			width: 20px
+			height: 20px
+			background-color: rgba(255, 255, 255, .3)
+			border-radius: 50%
+			opacity: 0
+			animation: photo .4s linear 2 forwards
+			
+
 		img
 			width: 100%
 			height: 100%
+	.flash
+		position: absolute
+		left: 59%
+		top: 42.5%
+		width: 58px
+		height: 44px
+		background: radial-gradient(ellipse at center, #828181 0%, #403e3f 70%, #403e3f 100%)
+		border: 6px solid #312F2F
+		border-radius: 6px
+		box-shadow: inset 0 6px 6px -6px #FDFDFD
+		opacity: 0
+		animation: flash 2s linear 1 forwards
 
 	&__block
 		position: relative
@@ -58,7 +96,6 @@
 		transform: translate(-50%, 0)
 		width: 500px
 		height: 700px
-		z-index: 1
 
 	&__ipad
 		position: absolute
@@ -93,6 +130,8 @@
 
 		img
 			max-width: 330px
+			max-height: 240px
+			width: 100%
 			margin-bottom: 20px
 
 .swiper-slide
