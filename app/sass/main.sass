@@ -96,6 +96,7 @@
 		transform: translate(-50%, 0)
 		width: 500px
 		height: 700px
+		z-index: 1
 
 	&__ipad
 		position: absolute
@@ -124,9 +125,13 @@
 
 	&__slider
 		position: relative
-		left: 67%
+		left: 57%
 		top: 15%
-		width: 330px
+		width: 420px
+		z-index: 1
+
+		.swiper-slide
+			padding: 0 60px
 
 		img
 			max-width: 330px
